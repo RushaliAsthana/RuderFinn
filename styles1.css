@@ -27,7 +27,10 @@
 #im1{
     margin-top: 70px;
 }
-
+ .modal-header{
+    background-color: #006622;
+    color: white;
+}
 .navbar{
     background-color: #006622;
 }
@@ -40,6 +43,16 @@
     color: yellow;
 }
 @media screen and (min-width: 480px) {
+    #exp .card:hover{
+        background-color:green;
+        color:white;
+        transition: transform .2s;
+        transform: scale(1.2);
+        z-index: 100;
+    }
+    #cap1{
+        color: white;
+    }
     #topbarheader{
         position: relative;
         top: 200px;
@@ -61,6 +74,7 @@
     
     #bla{
         margin-left: 300px;
+        margin-bottom: 50px;
     }
     .carousel-caption{
         margin-bottom:50px ;
@@ -80,9 +94,19 @@
     #c3{
         color: orange;border-left: 4px solid green; padding-left: 10px;
     }
+    
   }
  
   @media screen and (max-width: 480px) {
+    #bla{
+        position: relative;
+        margin-bottom:  210px;
+        
+    }
+    #cap1{
+        color: white;
+        
+    }
     #topbarheader{
         position: relative;
         top: 160px;
@@ -100,11 +124,9 @@
         padding-left: 15px;
     }
     #bla{
-        margin-left: 20px;
+        margin-left: 30px;
     }
-    #cap1{
-        color: black;
-    }
+    
     #c1{
         font-size: 40px;
         font-weight: bold;
@@ -124,6 +146,11 @@
     {
         height: 300px;
     }
+    #exp .card:hover{
+        background-color:green;
+        color:white;
+        
+    }
   }
   #carousel-example-2
   {
@@ -141,11 +168,5 @@
      font-weight: bold;
  }
  
-  #exp .card:hover{
-      background-color:green;
-      color:white;
-      transition: transform .2s;
-      transform: scale(1.2);
-      z-index: 100;
-  }
+  
  
